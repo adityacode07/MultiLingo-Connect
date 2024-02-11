@@ -1,0 +1,423 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.chat-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1500px;
+  height: 500px;
+  
+}
+
+.header {
+  background-color: #3b5998;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.messages {
+  width: 100%;
+}
+
+.message {
+  max-width: 70%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  word-wrap: break-word;
+}
+
+.sent {
+  align-self: flex-end;
+  background-color: #DCF8C6; /* Adjust color for sent messages */
+}
+
+.received {
+  align-self: flex-start;
+  background-color: #E6E6E6; /* Adjust color for received messages */
+}
+
+.user {
+  font-weight: bold;
+}
+
+.app-header {
+  text-align: center;
+  background-color: #FA7436;
+  color: white;
+  width: 100%;
+}
+
+.app-container {
+  margin-top: 50px;
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins';
+  top:80px;
+font-style: bold;
+font-weight: 600;
+font-size: 40px;
+color: #393636;
+left: 100px;
+position: absolute;
+  right: 0px; /* Align to the right side */
+  margin-right: 100px; 
+}
+
+
+.room label {
+  text-align: center;
+  font-size: 29px;
+  margin-bottom: 20px;
+  position: absolute;
+  right: 30px;
+  top:120px;
+  right:120px;
+  
+}
+
+.room input {
+  width: 280px;
+  height: 30px;
+  border: 2px solid #FA7436;
+  border-radius: 6px;
+  padding-left: 5px;
+  font-size: 20px;
+  text-align: left;
+  position: absolute;
+  margin-left: 30px;
+  right:120px;
+  top:120px;
+  margin-top: 60px;
+}
+.room button {
+  width: 130px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  padding-left: 5px;
+  font-size: 20px;
+  text-align: center;
+  margin: 5px;
+  background-color: #302c28;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 38px;
+  top:240px;
+  right:200px;
+}
+
+.sign-out {
+  width: 130px;
+  height: 40px;
+  border: #282c34;
+  border-radius: 6px;
+  padding-left: 5px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  
+  margin: 5px;
+  background-color: #302c28;
+  color: white;
+  cursor: pointer;
+  top:138px;
+  right:294px;
+  position: absolute;
+  
+}
+
+.navunder {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navunder li {
+  list-style-type: none;
+  margin-right: 39px;
+}
+
+.namess {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+}
+.acc{
+  width: 90px;
+height: 30px;
+background: #FA7436;
+border-radius: 5px;
+border: none;
+color: white;
+}
+
+.texts {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.nav-item a {
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+}
+.nav-items a{
+  color:#FA7436;
+  text-decoration: none;
+  padding: 5px;
+}
+.body{
+  text-decoration: none;
+}
+
+
+
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 80px;
+}
+
+.signup-container h2 {
+  margin-bottom: 20px;
+}
+
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.signup-container input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signup-container button {
+  background-color: #FA7436;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signup-container p {
+  margin-top: 20px;
+}
+
+.signup-container a {
+  color: #FA7436;
+}
+
+
+
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.search-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke: #000;
+}
+
+.search-input {
+  width: 800px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 35px;
+  font-size: 16px;
+  background-color: rgb(241, 240, 240);
+  
+}
+.adj{
+  display: flex;
+  justify-content: space-between;
+}
+
+.s {
+  position: absolute;
+  height: 210px;
+  left: 95px;
+  top: 200px;
+  font-family: 'Volkhov';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+}
+.x{
+  position: absolute;
+  width: 617px;
+  height: 210px;
+  left: 760px;
+  top: 100px;
+  font-family: 'Volkhov';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 70px;
+}
+
+
+
+.parking-text {
+  color:#FA7436;
+}
+
+
+.extra{
+  position: absolute;
+width: 497px;
+height: 120px;
+top: 236px;
+display: flex;
+
+/* Paragraph-20px */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+color: #666666;
+line-height: 40px;
+}
+
+.extras{
+  position: absolute;
+  width: 497px;
+  height: 120px;
+  top: 496px;
+  display: flex;
+  left: 90px;
+  
+  /* Paragraph-20px */
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #666666;
+  line-height: 40px;
+}
+
+.discover{
+  box-sizing: border-box;
+
+position: absolute;
+width: 178px;
+height: 60px;
+top: 390px;
+
+background: #FFFFFF;
+/* Primary O */
+
+border: 1px solid #FA7436;
+border-radius: 5px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 32px;
+/* identical to box height, or 178% */
+
+
+/* Primary O */
+
+color: #FA7436;
+}
+.cars{
+  display: flex;
+  position: absolute;
+width: 632px;
+height: 395px;
+left: 824px;
+top: 1px;
+z-index: 1;
+}
+.colll{
+  position: absolute;
+width: 340px;
+height: 20px;
+left: 740px;
+top: 1px;
+
+}
+.cardd{
+  position: absolute;
+width: 182px;
+height: 68px;
+left: 580px;
+top: 80px;
+box-shadow: #282c34;
+}
+.carddd{
+  position: absolute;
+width: 160px;
+height: 45px;
+left: 1090px;
+top: 25px;
+box-shadow: #282c34;
+}
+.cardddd{
+  position: absolute;
+  width: 182px;
+  height: 68px;
+  left: 830px;
+  top: 8px;
+  box-shadow: #282c34;
+
+} 
+.last{
+  position: absolute;
+  width: 497px;
+  height: 120px;
+  top: 436px;
+  display: flex;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #4c4c4c;
+  line-height: 40px;
+  right:55px;
+}

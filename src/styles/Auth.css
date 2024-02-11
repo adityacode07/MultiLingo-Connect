@@ -1,0 +1,22 @@
+.auth {
+    text-align: center;
+    font-family: 'Poppins';
+    top:0px;
+font-style: bol;
+font-weight: 600;
+font-size: 20px;
+color: #393636;
+line-height: 40px;
+}
+
+.auth button {
+    width: 200px;
+    height: 50px;
+    top:0px;
+    border: none;
+    background-color: #FA7436;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
